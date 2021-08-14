@@ -1,0 +1,339 @@
+/* Body全体 */
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Sans",sans-serif;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  width: 80%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* ヘッダー */
+header {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+header .container {
+  width: 100%;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo img {
+  height: 65px;
+}
+
+.headermenu {
+  float: right;
+}
+
+.headermenu ul{
+  line-height: 65px;
+
+}
+
+.headermenu li{
+  padding: 0 20px;
+  color: white;
+  float: left;
+}
+
+/* 背景z-index固定 */
+.background {
+  z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/background_1.jpg);
+  background-size: cover;
+}
+
+/* 見出し */
+.index {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.index h2 {
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #305089;
+  box-shadow: 5px 5px #aeb5dc;
+  color: #ffffff;
+}
+
+/* トップ画面 */
+
+#topview  {
+  margin-top:65px
+
+}
+
+#topview .container {
+  background-image: url(../image/top_background.jpg);
+  background-size: cover;
+}
+
+#topview .title {
+  padding: 100px 0 50px 0;
+
+}
+
+#topview h1 {
+  font-size: 30px;
+  padding:10px;
+  display: inline-block;
+  background-color: #fcc9ac;
+  color: #4a387c;
+  box-shadow: 7px 7px #d7cebb ;
+}
+
+#topview .subtitle {
+  margin-top: 60px;
+  text-align: right;
+}
+
+#topview .subtitle p {
+  display: inline-block;
+  margin-right: 10%;
+  color: #ab0f50;
+  font-size: 30px;
+  background: linear-gradient(transparent 70%, #f9e900 70%);
+  font-family: 'Caveat', cursive;
+  font-family: 'Courgette', cursive;
+  font-family: 'Dancing Script', cursive;
+}
+
+
+
+#topview .toptext {
+  margin-top: 50px;
+  text-align: center;
+
+
+}
+
+#topview .toptext p {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: rgba(255,255,255,0.8);
+  padding: 10px;
+}
+
+#topview .limitedtime {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#topview .limitedtime p {
+  padding: 10px;
+  background-color: #ffe0b6;
+  display: inline-block;
+}
+
+#topview .limitedtime button {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #47763c;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+/* 悩み */
+#problem .issue {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#problem  .girl {
+  width: 30%;
+}
+
+#problem .girl img {
+  width: 100%;
+}
+
+#problem .problems {
+  width: 60%;
+}
+
+#problem .problems div {
+  background-color: rgba(219, 237, 240, 0.7);
+  margin: 10px;
+  padding:10px;
+  border-width: 2px;
+  border-color: #1760a0;
+  border-radius: 5px;
+}
+
+/* 問題解決 */
+
+#solution .solutionview {
+  text-align: center;
+}
+
+
+#solution .solutionview img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#solution .solutions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#solution .solutions h3 {
+  color: red;
+  font-weight: bold;
+}
+#solution .solutions .item {
+  width: 30%;
+  padding: 10px;
+  background-color: rgba(255, 250, 1940, 0.7);
+  border-radius: 5px;
+
+}
+
+
+/* プロフィール */
+#profile .profileImage {
+  text-align: center;
+}
+
+#profile h3 {
+  font-weight: bold;
+}
+
+#profile .hobby {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#profile .history {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#profilephoto {
+  width: 30%;
+
+}
+
+#profile table {
+  margin: 0 auto;
+}
+
+
+/* サービス */
+#service .skillsbox {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#service  .website, #service .blog {
+  text-align: center;
+  width: 40%;
+  background-color: rgba(234, 246, 253, 0.8);
+  border-width: 2px;
+  border-color: #3b82c4;
+  border-radius: 10px;
+
+}
+
+#service .skillsbox img {
+  width: 60%;
+}
+
+/* 実績 */
+#works .websitebox, #works .blogbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+#works img {
+  width: 100%
+}
+
+#works .website, #works .blog {
+  text-align: center;
+}
+
+#works h3 {
+  font-weight: bold;
+  display: inline-block;
+  margin: 20px auto;
+  background: linear-gradient(transparent 70%, #f9e900 70%);
+
+}
+
+#works .work {
+  text-align: center;
+  width: 40%;
+  background-color: rgba(234, 246, 253, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+
+
+}
+
+#works h5 {
+  font-weight: bold;
+  color: red;
+  font-size: 18px;
+  line-height: 23px;
+
+}
+
+
+/* 依頼の流れ */
+
+#order .container {
+  text-align: center;
+}
+
+#order li {
+  line-height: 25px;
+  font-size: 20px;
+}
+
+/* お問い合わせ */
+#contact form {
+  margin: 0 auto;
+}
